@@ -1,8 +1,4 @@
-//Arduino Human Following Robot
-// You have to Install the AFMotor and NewPing library Before Uploading the sketch//
-// To install the libraries ( first download the AF Motor driver, NewPing and Servo Library zip file //
-// then Go to Skecth >> Include Library >> Add .Zip Library >> Select The downloaded zip file >> Done) //
-// Contact me on instagram for any question(Insta Id : M_ideas_youtube)
+
 
 
 #include<NewPing.h>
@@ -28,7 +24,7 @@ Servo myservo;
 int pos =0;
 
 void setup() {
-  // put your setup code here, to run once:
+  
   Serial.begin(9600);
 myservo.attach(10);
 {
@@ -49,7 +45,7 @@ pinMode(LEFT, INPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
 
   delay(50);
  unsigned int distance = sonar.ping_cm();
