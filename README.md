@@ -6,10 +6,10 @@ This project involves building a human-following robot using an Arduino UNO, ult
 
 - [Introduction](#introduction)
 - [Components Required](#components-required)
+- [Circuit Diagram](#circuit-diagram)
 - [Assembly Instructions](#assembly-instructions)
 - [How It Works](#how-it-works)
 - [Demonstration Video](#demonstration-video)
-- [References](#references)
 
 ## Introduction
 
@@ -27,6 +27,9 @@ The Human Following Robot is designed to detect and follow a moving object using
 - Jumper Wires
 - Power Source (e.g., two lithium-ion batteries)
 
+## Circuit Diagram
+
+![Human Following Robot Circuit Diagram](https://letsmakeprojects.com/wp-content/uploads/2021/03/human-following-robot-circuit-diagram.jpg)
 
 ## Assembly Instructions
 
@@ -47,4 +50,23 @@ The Human Following Robot is designed to detect and follow a moving object using
    - Wire the ultrasonic sensor and IR sensors to the appropriate pins on the Arduino.
    - Ensure all connections are secure and insulated to prevent short circuits.
 
+## How It Works
+
+### Object Detection:
+- The ultrasonic sensor continuously measures the distance to objects in front of the robot.
+- IR sensors detect the presence and position of the object (left or right).
+
+### Movement Control:
+- Based on sensor inputs, the Arduino determines the direction of the object.
+- The robot moves forward, left, or right to follow the object.
+- If no object is detected within the specified range, the robot stops.
+
+### Servo Operation:
+- The servo motor rotates the sensor assembly to scan for objects, allowing the robot to detect and follow objects within a wider field of view.
+
+## Demonstration Video
+
+For a visual demonstration of the Human Following Robot in action, watch the following video:
+
+[![Watch the video](https://img.youtube.com/vi/bdQL5vsal_M/0.jpg)](https://youtu.be/bdQL5vsal_M)
 
